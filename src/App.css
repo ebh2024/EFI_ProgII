@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Barra de navegación fija arriba */
+.menubar {
+  position: fixed;  /* Fija la barra en la pantalla */
+  top: 0;           /* La coloca en la parte superior */
+  left: 0;
+  width: 100%;      /* Ocupa todo el ancho */
+  z-index: 1000;    /* Se asegura de que esté sobre otros elementos */
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;  /* Separa el menú y los botones */
+  align-items: center;
+  justify-content: flex-end;  
+}
+
+/* Botones de iniciar sesión y registro */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Ajustar contenido para que no quede tapado por la barra */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.p-menubar-root-list {
+  display: flex;
+  gap: 10px;
+}
